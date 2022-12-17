@@ -1,4 +1,4 @@
-name: Build javascript project
+name: SBOM generation
 on: push
 jobs:
   build:
