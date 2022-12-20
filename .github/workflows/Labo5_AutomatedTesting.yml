@@ -2,6 +2,19 @@ name: Automated static testing
 
 on: push
 jobs:
+  njsscan:
+      runs-on: ubuntu-latest
+      name: njsscan check
+      steps:
+      - name: Checkout the code
+        uses: actions/checkout@v2
+      - name: nodejsscan scan
+        id: njsscan
+        uses: ajinabraham/njsscan-action@master
+        with:
+          args: '.'
+
+
   build:
 
     runs-on: ubuntu-latest
