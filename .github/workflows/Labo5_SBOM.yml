@@ -3,8 +3,6 @@ name: SBOM generation
 on:
   push:
   pull_request:
-  schedule:
-    - cron: '*/15 * * * *'
 
 
 jobs:

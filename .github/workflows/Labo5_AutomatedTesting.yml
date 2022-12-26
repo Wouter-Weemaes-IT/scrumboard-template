@@ -3,9 +3,8 @@ name: Automated static testing
 on:
   push:
   pull_request:
-  schedule:
-    - cron: '*/15 * * * *'
-    
+
+
 jobs:
   njsscan:
       runs-on: ubuntu-latest
