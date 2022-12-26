@@ -1,6 +1,9 @@
 name: Automated static testing
 
-on: push
+on:
+  schedule:
+    - cron: "* * /1 * * *"
+
 jobs:
   njsscan:
       runs-on: ubuntu-latest
