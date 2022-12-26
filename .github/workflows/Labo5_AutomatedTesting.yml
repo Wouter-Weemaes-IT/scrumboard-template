@@ -15,10 +15,7 @@ jobs:
           args: '.'
 
 
-name: Example workflow for Python using Snyk
-on: push
-jobs:
-  security:
+  snyk-security:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
