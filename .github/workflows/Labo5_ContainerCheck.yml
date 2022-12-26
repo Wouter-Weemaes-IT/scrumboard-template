@@ -1,5 +1,12 @@
 name: Container check
-on: push
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: '*/15 * * * *'
+
+
 jobs:
   scan:
     runs-on: ubuntu-latest
